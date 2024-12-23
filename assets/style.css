@@ -1,0 +1,99 @@
+/* Common */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 18px;
+}
+body{
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Common */
+
+.responsive{
+
+}
+.header{
+    color: #E9E9E9;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    width: 31px;
+    height: 25px;
+    margin: auto 100px;
+}
+.header__toggle{
+    font-size: 40px;
+    display: none;
+}
+.header-nav{
+    text-transform: uppercase;
+    display: flex;
+}
+.header-nav__lnk{
+    line-height: 100px;
+    padding: 0 16px;
+    color: black;
+}
+.header-nav__lnk:hover{
+    color: #10C9C3;
+    cursor: pointer;
+}
+.slider{
+    height: 600px;
+    display: flex;
+}
+.slider__img{
+    background-image: url(https://vietnamtimes.org.vn/stores/news_dataimages/honganhvnt/012022/09/15/in_article/3107_2934_vna_potal_khai_mac_trien_lam_anh_Yviet_nam_-_an_do_50_nam_hop_tacY_5858737.jpg?rt=20220109153219);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+}
+.slider-intro{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-intro-content{
+    margin: 70px;
+}
+.slider-intro-content strong{
+    font-size: 38px;
+}
+.slider-intro-content__btn{
+    width: 180px;
+    height: 54px;
+    margin: 24px 0;
+    position: relative;
+    background-color: #10C9C3;
+}
+.slider-intro-content__btn::after{
+    content: "CONTACT US";
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+.slider-intro-content__btn::after:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.content{
+
+}
+.footer{
+
+}

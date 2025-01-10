@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" main="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="<?= RESOURCE_HOST ?>./assets/style.css?_rev=<?= REVISION ?>"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
@@ -15,59 +18,71 @@
     />
   </head>
   <body>
-    <div class="responsive">
-      <div class="header">
-        <img class="header__logo" src="./assets/img/logo.png" />
-        <div class="header__toggle">
-          <i class="fa-solid fa-bars"></i>
+    <div class="Section Section--Header">
+      <div class="Responsive">
+        <div class="Header">
+          <img
+            class="Header__logo"
+            src="./assets/img/Header_img_logo_on.png"
+            alt="ロゴ"
+            decoding="async"
+            loading="lazy"
+          />
+          <div class="Header__toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="Header-nav">
+            <li>
+              <a href="#" class="Header-nav__lnk"></a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">home</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">about</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">work</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">process</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">services</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">testimonials</a>
+            </li>
+            <li>
+              <a href="#" class="Header-nav__lnk">contact</a>
+            </li>
+          </ul>
         </div>
-        <ul class="header-nav">
-          <li>
-            <a href="#" class="header-nav__lnk"></a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">home</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">about</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">work</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">process</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">services</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">testimonials</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav__lnk">contact</a>
-          </li>
-        </ul>
+        <!-- /Header -->
       </div>
-      <div class="top">
-        <div class="top__img"></div>
-        <div class="top-intro">
-          <div class="top-intro-content">
+      <!-- /Responsive -->
+      <div class="Banner">
+        <div class="Banner__img"></div>
+        <div class="Banner-intro">
+          <div class="Banner-intro-content">
             <h1>We Design and Develop</h1>
             <p>
               We are a new design studio based in USA. We have over 20 years of
               combined experience, and know a thing or two about designing
               websites and mobile apps.
             </p>
-            <a class="top-intro-content__btn">CONTACT US</a>
+            <a class="Banner-intro-content__btn">CONTACT US</a>
           </div>
         </div>
       </div>
+      <!-- /Banner -->
     </div>
-    <div class="main">
-      <div class="responsive">
-        <div class="main-about">
+    <!-- Section -->
+    <div class="Section Section--main">
+      <div class="Responsive">
+        <div class="Main-about">
           <h3>About Us</h3>
-          <div class="main-about__text">
+          <div class="Main-about__text">
             <p>
               Divide have don't man wherein air fourth. Own itself make have
               night won't make.
@@ -79,91 +94,117 @@
             <p>heaven fruit, dominion she'd won't very all.</p>
           </div>
           <img
-            class="main-about__img"
-            src="./assets/img/signature.png"
+            class="Main-about__img"
+            src="./assets/img/Main-about_img_signature_on.png"
             alt="signature"
+            decoding="async"
+            loading="lazy"
           />
         </div>
-        <div class="main-graphs">
-          <div class="main-graphs-left">
-            <div class="main-graphs-left-text">
+        <!-- /Main-about -->
+        <div class="Main-graphs">
+          <div class="Main-graphs-left">
+            <div class="Main-graphs-left-text">
               <h3>Professional Skills</h3>
             </div>
-            <div class="main-graphs-left-skill">
+            <div class="Main-graphs-left-skill">
               <p>UI/UX DESIGN 75%</p>
-              <div class="main-graphs-left-skill-bar">
-                <div class="main-graphs-left-skill-bar__75pc"></div>
+              <div class="Main-graphs-left-skill-bar">
+                <div class="Main-graphs-left-skill-bar__75pc"></div>
               </div>
             </div>
-            <div class="main-graphs-left-skill">
+            <div class="Main-graphs-left-skill">
               <p>WEB DEVELOPMENT 90%</p>
-              <div class="main-graphs-left-skill-bar">
-                <div class="main-graphs-left-skill-bar__90pc"></div>
+              <div class="Main-graphs-left-skill-bar">
+                <div class="Main-graphs-left-skill-bar__90pc"></div>
               </div>
             </div>
-            <div class="main-graphs-left-skill">
+            <div class="Main-graphs-left-skill">
               <p>MARKETING 65%</p>
-              <div class="main-graphs-left-skill-bar">
-                <div class="main-graphs-left-skill-bar__65pc"></div>
+              <div class="Main-graphs-left-skill-bar">
+                <div class="Main-graphs-left-skill-bar__65pc"></div>
               </div>
             </div>
           </div>
-          <div class="main-graphs-img"></div>
+          <div class="Main-graphs-img"></div>
         </div>
-        <div class="main-results">
-          <div class="main-results-box">
-            <div class="main-results-box-item">
-              <img src="./assets/img/Bag.png" alt="prj completed" />
+        <!-- /Main-graph -->
+        <div class="Main-results">
+          <div class="Main-results-box">
+            <div class="Main-results-box-item">
+              <img
+                src="./assets/img/Main-results-box_img_icon1.png"
+                alt="prj completed"
+                decoding="async"
+                　loading="lazy"
+              />
               <div>
-                <span class="main-results-box-item__top">548</span>
-                <span class="main-results-box-item__btm"
+                <span class="Main-results-box-item__top">548</span>
+                <span class="Main-results-box-item__btm"
                   >PROJECTS COMPLETED</span
                 >
               </div>
             </div>
-            <div class="main-results-box-item">
-              <img src="./assets/img/Time Span.png" alt="hour spent" />
+            <div class="Main-results-box-item">
+              <img
+                src="./assets/img/Main-results-box_img_icon2.png"
+                alt="hour spent"
+                decoding="async"
+                　loading="lazy"
+              />
               <div>
-                <span class="main-results-box-item__top">1465</span>
-                <span class="main-results-box-item__btm">WORKING HOURS</span>
+                <span class="Main-results-box-item__top">1465</span>
+                <span class="Main-results-box-item__btm">WORKING HOURS</span>
               </div>
             </div>
-            <div class="main-results-box-item">
-              <img src="./assets/img/Army Star.png" alt="feedback" />
+            <div class="Main-results-box-item">
+              <img
+                src="./assets/img/Main-results-box_img_icon3.png"
+                alt="feedback"
+                decoding="async"
+                　loading="lazy"
+              />
               <div>
-                <span class="main-results-box-item__top">612</span>
-                <span class="main-results-box-item__btm"
+                <span class="Main-results-box-item__top">612</span>
+                <span class="Main-results-box-item__btm"
                   >POSITIVE FEEDBACKS</span
                 >
               </div>
             </div>
-            <div class="main-results-box-item">
-              <img src="./assets/img/Favorite.png" alt="happy" />
+            <div class="Main-results-box-item">
+              <img
+                src="./assets/img/Main-results-box_img_icon4.png"
+                alt="happy"
+                decoding="async"
+                　loading="lazy"
+              />
               <div>
-                <span class="main-results-box-item__top">735</span>
-                <span class="main-results-box-item__btm">HAPPY CLIENTS</span>
+                <span class="Main-results-box-item__top">735</span>
+                <span class="Main-results-box-item__btm">HAPPY CLIENTS</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="main-boxes">
-          <div class="main-boxes-list">
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
+        <!-- /Main-results -->
+        <div class="Main-boxes">
+          <div class="Main-boxes-list">
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
           </div>
-          <div class="main-boxes-list main-boxes-list--odd">
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
-            <div class="main-boxes-list__item"></div>
+          <div class="Main-boxes-list Main-boxes-list--odd">
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
+            <div class="Main-boxes-list__item"></div>
           </div>
-          <div class="main-boxes__more">
+          <div class="Main-boxes__more">
             <p>load more work</p>
           </div>
         </div>
-        <div class="main-about">
+        <!-- /Main-boxes -->
+        <div class="Main-about">
           <h3>Our Work Process</h3>
           <p>
             Was years it seasons was there form he in in them together over
@@ -172,7 +213,7 @@
             third sixth gathered female creeping bearing behold years.
           </p>
         </div>
-        <div class="main-video__container">
+        <div class="Main-video__container">
           <iframe
             src="https://www.youtube.com/embed/9_60Fl6g9xE?si=aGupBTXnUTUYjsTC"
             title="YouTube video player"
@@ -182,140 +223,170 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="main-icons">
-          <div class="main-icons-item">
+        <!-- /Main-video -->
+        <div class="Main-icons">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
-              src="./assets/img/Diamond.png"
+              class="Main-icons-item__img"
+              src="./assets/img/Main-icons-item__img_icon1.png"
               alt="uiux design"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">ui/ux design</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">ui/ux design</p>
+            <p class="Main-icons-item__content">
               Be set fourth land god darkness <br />make it wherein own
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
-              src="./assets/img/Reddit.png"
+              class="Main-icons-item__img"
+              src="./assets/img/Main-icons-item__img_icon2.png"
               alt="web development"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">web development</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">web development</p>
+            <p class="Main-icons-item__content">
               A she'd them bring void moving<br />thA she'd them bring void
               moving third she'd kind fill
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/Share.png"
               alt="app mobile"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">app / mobile</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">app / mobile</p>
+            <p class="Main-icons-item__content">
               Dominion man second spirit he,<br />earth they're creeping
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/StumbleUpon.png"
               alt="game design"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">game design</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">game design</p>
+            <p class="Main-icons-item__content">
               Morning his saying moveth it<br />multiply appear life be
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/MySpace.png"
-              alt=""
+              alt="Main icon"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">SEO / marketing</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">SEO / marketing</p>
+            <p class="Main-icons-item__content">
               Give won't after land fill creeping<br />meat you, may
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/Christmas Penguin.png"
               alt="photography"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">photography</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">photography</p>
+            <p class="Main-icons-item__content">
               Creepeth one seas cattle grass<br />give moving saw give
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/Christmas Candy.png"
               alt="graphic design"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">graphic design</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">graphic design</p>
+            <p class="Main-icons-item__content">
               Open, great whales air rule for,<br />fourth life whales
             </p>
           </div>
-          <div class="main-icons-item">
+          <div class="Main-icons-item">
             <img
-              class="main-icons-item__img"
+              class="Main-icons-item__img"
               src="./assets/img/Icons8.png"
-              alt=""
+              alt="Icon"
+              loading="lazy"
+              decoding="async"
             />
-            <p class="main-icons-item__title">illustration</p>
-            <p class="main-icons-item__content">
+            <p class="Main-icons-item__title">illustration</p>
+            <p class="Main-icons-item__content">
               Whales likeness hath, man kind<br />for them air two won't
             </p>
           </div>
         </div>
-        <div class="main-slider">
-          <div class="main-slider-quote">
+        <!-- /Main-icons -->
+        <div class="Main-slider">
+          <div class="Main-slider-quote">
             <h3>
               Outstanding job and exceeded all expectations. It was a pleasure
               <br />to work with them on a sizable first project and am looking
             </h3>
             <p>Michael Hopkins</p>
           </div>
-          <div class="main-slider-dots">
-            <span class="main-slider-dots__dot"></span>
-            <span class="main-slider-dots--big"></span>
-            <span class="main-slider-dots__dot"></span>
+          <div class="Main-slider-dots">
+            <span class="Main-slider-dots__dot"></span>
+            <span class="Main-slider-dots--big"></span>
+            <span class="Main-slider-dots__dot"></span>
           </div>
         </div>
-        <div class="main-logos">
+        <!-- /Main-slider -->
+        <div class="Main-logos">
           <img
-            src="/assets/img/logo1.png"
+            src="./assets/img/Main-logos_img_logo1.png"
             alt="logo1"
-            class="main-logos__img"
+            class="Main-logos__img"
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/assets/img/logo2.png"
+            src="./assets/img/Main-logos_img_logo2.png"
             alt="logo2"
-            class="main-logos__img"
+            class="Main-logos__img"
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/assets/img/logo3.png"
+            src="./assets/img/Main-logos_img_logo3.png"
             alt="logo3"
-            class="main-logos__img"
+            class="Main-logos__img"
+            loading="lazy"
+            decoding="async"
           />
           <img
             src="/assets/img/logo4.png"
             alt="logo4"
-            class="main-logos__img"
+            class="Main-logos__img"
+            loading="lazy"
+            decoding="async"
           />
           <img
             src="/assets/img/logo5.png"
             alt="logo5"
-            class="main-logos__img"
+            class="Main-logos__img"
+            loading="lazy"
+            decoding="async"
           />
         </div>
-        <div class="main-input">
-          <div class="main-about">
+        <!-- /Main-logos -->
+        <div class="Main-input">
+          <div class="Main-about">
             <h3>Need a Project?</h3>
             <p>
               Let us know what you're looking for in an agency. We'll take a
@@ -325,7 +396,7 @@
             </p>
           </div>
           <form>
-            <div class="main-input-personal">
+            <div class="Main-input-personal">
               <input
                 type="text"
                 id="name"
@@ -357,53 +428,61 @@
             </button>
           </form>
         </div>
+        <!-- /Main-input -->
       </div>
+      <!-- /Responsive -->
     </div>
-    <div class="footer">
-      <div class="responsive">
-        <div class="footer-outline">
-          <div class="footer-outline-company">
-            <p class="footer-outline-company__name">Piroll Design, Inc.</p>
-            <p>
-              ? 2017 Piroll. All rights reserved. <br />
-              Designed by robirurk.
-            </p>
-          </div>
-          <div class="footer-outline__mail">
-            <p>
-              hello@pirolltheme.com <br />
-              +44 987 065 908
-            </p>
-          </div>
-          <div class="footer-outline-links">
-            <div class="footer-outline-links__left">
-              <ul style="list-style: none">
-                <li>Projects</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Carreer</li>
-              </ul>
+    <!-- /Section -->
+    <div class="Section Section--footer">
+      <div class="Responsive">
+        <div class="Footer">
+          <div class="Footer-outline">
+            <div class="Footer-outline-company">
+              <p class="Footer-outline-company__name">Piroll Design, Inc.</p>
+              <p>
+                ? 2017 Piroll. All rights reserved. <br />
+                Designed by robirurk.
+              </p>
             </div>
-            <div class="footer-outline-links__right">
+            <div class="Footer-outline__mail">
+              <p>
+                hello@pirolltheme.com <br />
+                +44 987 065 908
+              </p>
+            </div>
+            <div class="Footer-outline-links">
+              <div class="Footer-outline-links__left">
+                <ul style="list-style: none">
+                  <li>Projects</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Carreer</li>
+                </ul>
+              </div>
+              <div class="Footer-outline-links__right">
+                <ul>
+                  <li>News</li>
+                  <li>Events</li>
+                  <li>Legals</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+            </div>
+            <div>
               <ul>
-                <li>News</li>
-                <li>Events</li>
-                <li>Legals</li>
-                <li>Contact</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Dribble</li>
               </ul>
             </div>
-          </div>
-          <div>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Dribble</li>
-            </ul>
           </div>
         </div>
+        <!-- /Footer -->
       </div>
+      <!-- /Responsive -->
     </div>
+    <!-- /Section -->
+    <script src="./main.js"></script>
   </body>
-  <script src="./main.js"></script>
 </html>
